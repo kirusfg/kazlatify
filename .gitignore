@@ -171,9 +171,16 @@ CTCWordBeamSearch/
 # Data for experiments
 data/
 !src/data/
-checkpoints/
+checkpoints/*
 corpora/
+
+# Leave pre-trained models in the repo
+!checkpoints/hkr_202411051410/
+!checkpoints/kohtd_202411051413/
+!checkpoints/both_202411051413/
+
+checkpoints/*/logs/
 
 # Segmentation results
 segments*/
-*.png
+/*.png
